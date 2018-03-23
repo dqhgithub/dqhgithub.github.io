@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width:640px){
+
+}
+@media (max-width:600px){
+
+}
+@media (max-width:550px){
+
+}
+@media (max-width:500px){
+	.case-list a div span { font-size:14px;}
+    .case-list a div span i {font-size: 14px;}
+}
+@media (max-width:450px){
+     .entry p input.text{ width:75%; }
+	 .logo-name{ font-size:25px;}
+}
+@media (max-width:400px){
+	.case-list a div span { font-size:12px;}
+    .case-list a div span i {font-size: 12px;}
+	.tab1-nav a{font-size: 12px;}
+
+}
+@media (max-width:350px){
+	
+}
