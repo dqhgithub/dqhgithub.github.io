@@ -1,0 +1,10 @@
+{
+	"index.html": {
+		"resources": [
+			"js/manifest.227728504affe7ad782c.js",
+			"js/app.401e99c7384787c47a6a.js",
+			"js/vendor.5cf633bc394d34051199.js",
+			"css/app.f227525e732a1af2c219002e3f7bc1f5.css"
+		]
+	}
+}
