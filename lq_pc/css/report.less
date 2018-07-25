@@ -1,0 +1,148 @@
+/*复用样式*/
+
+@import "dqh.less";
+
+/*复用样式*/
+.report_left {
+    float: left;
+    width: calc(100% - 49.71% - 34px);
+    height: 895px;
+    padding: 0 8px 0 12px;
+    background-color: #fff;
+    .yuan;
+}
+
+.report_title {
+    padding: 20px 5px 15px;
+    position: relative;
+    span {
+        font-size: @rem * 24;
+        color: #8c8c8c;
+    }
+    .pie_btn {
+        position: absolute;
+        top: 17px;
+        right: 65px;
+        width: 43px;
+        height: 36px;
+        background: url(../img/report/pie_1.png) no-repeat;
+        &.active {
+            background: url(../img/report/pie_2.png) no-repeat;
+        }
+    }
+    .bar_btn {
+        position: absolute;
+        right: 17px;
+        top: 17px;
+        width: 43px;
+        height: 36px;
+        background: url(../img/report/bar_1.png) no-repeat;
+        &.active {
+            background: url(../img/report/bar_2.png) no-repeat;
+        }
+    }
+}
+
+.chart_variety {
+    height: 450px;
+}
+
+.variety_title {
+    height: 55px;
+    line-height: 55px;
+    background-color: #e1f2ff;
+    color: #a1a1a1;
+    font-size: @rem * 20;
+    border-bottom: 1px solid #fefefe;
+    span {
+        display: inline-block;
+    }
+    .orders {
+        margin-left: 35px;
+        display: inline-block;
+        width: 40px;
+    }
+    .names {
+        width: 270px;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+.variety_list {
+    height: 315px;
+    overflow-y: auto;
+    border-radius: 0 0 8px 8px;
+    li {
+        position: relative;
+        background-color: #f6f6f6;
+        line-height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #fefefe;
+        &:nth-child(even) {
+            background-color: #eee;
+        }
+        span {
+            display: inline-block;
+            font-size: @rem * 18;
+        }
+        .order {
+            margin-left: 35px;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #fff;
+            font-size: @rem * 18;
+            background: url(../img/report/yuan_bg.png) no-repeat;
+            margin-right: 8px;
+        }
+        .name {
+            width: 270px;
+            padding: 0 10px;
+            text-align: center;
+            color: #666;
+        }
+        .number {
+            color: #006699;
+        }
+        .look {
+            color: #7a7c7d;
+            position: absolute;
+            right: 4%;
+        }
+    }
+}
+
+.report_right {
+    float: right;
+    width: calc(100% - 49.28% - 14px);
+}
+
+.report_rtop {
+    width: 100%;
+    height: 440px;
+    background-color: #fff;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .yuan;
+    margin-bottom: 15px;
+}
+
+.report_rbottom {
+    width: 100%;
+    height: 440px;
+    background-color: #fff;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .yuan;
+}
+.chart_supplier{
+   #chart3{
+       margin-left: -30px;
+   }
+}

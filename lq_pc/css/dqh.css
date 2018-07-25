@@ -1,0 +1,79 @@
+.margin {
+  margin: 0 auto;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s_btn1 {
+  display: inline-block;
+  width: 7.5rem;
+  height: 48px;
+  line-height: 48px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #8c8c8c;
+  border-radius: 8px;
+}
+.s_btn1:hover,
+.s_btn1.active {
+  background-color: #22a6e6;
+  color: #fff;
+}
+.s_btn2 {
+  display: inline-block;
+  width: 6.25rem;
+  height: 46px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ababab;
+  border-radius: 8px;
+}
+.s_btn3 {
+  display: inline-block;
+  width: 6.25rem;
+  height: 46px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+  background-color: #1276c4;
+  border-radius: 8px;
+}
+.icon_btn {
+  display: inline-block;
+  width: 7.1875rem;
+  height: 48px;
+  line-height: 48px;
+  font-size: 1.5rem;
+  padding-left: 55px;
+  position: relative;
+  background-color: #666666;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+.icon_btn .icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  width: 1.875rem;
+  height: 1.875rem;
+  transform: translateY(-50%);
+}
+.icon_btn .icon img {
+  display: block;
+  width: 100%;
+}

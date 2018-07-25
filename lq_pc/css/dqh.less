@@ -1,0 +1,200 @@
+@rem: 0.0625rem;
+.c(@w: 180px) {
+    @w: @w;
+    @h: 52px;
+    @c: #fff;
+    @fz: 24px;
+    @bc: #868686;
+    width: @w;
+    height: @h;
+    line-height: @h;
+    font-size: @fz;
+    color: @c;
+    background-color: @bc;
+}
+
+//自动居中
+.margin {
+    margin: 0 auto;
+}
+
+//隐藏
+.hide {
+    display: none;
+}
+
+//显示
+.show {
+    display: block;
+}
+
+//行内
+.inline {
+    display: inline-block;
+}
+
+//文本超出隐藏
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//闪动
+//@keyframes backOpacity{
+//  0% {
+//      opacity: 1
+//  }
+//  25% {
+//      opacity: .5
+//  }
+//  50% {
+//      opacity: 1
+//  }
+//  75% {
+//      opacity: .5
+//  }
+//  100% {
+//      opacity: 1
+//  }
+//}
+
+//闪动
+.animation_opactiy (){
+    animation: backOpacity 2s ease-in-out infinite;
+}
+
+// 背景图片地址和大小
+.bis(@url) {
+    background-image: url(@url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+//圆
+.borderRadius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+//定位全屏
+.allcover (){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+//定位上下左右居中
+.center (){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+.ct (){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+//定位上下居中
+.cl (){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//宽高
+.wh(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//字体大小，颜色
+.sc(@size, @color) {
+    font-size: @size;
+    color: @color;
+}
+
+//flex 布局和 子元素 对其方式
+.fj(@type: space-between) {
+    display: flex;
+    justify-content: @type;
+}
+
+//园
+.yuan(@size: 8px) {
+    border-radius: @size;
+}
+
+//按钮样式
+.s_btn1 {
+    display: inline-block;
+    width: @rem * 120;
+    height: 48px;
+    line-height: 48px;
+    font-size: @rem * 24;
+    text-align: center;
+    color: #8c8c8c;
+    .yuan;
+    &:hover,
+    &.active {
+        background-color: #22a6e6;
+        color: #fff;
+    }
+}
+
+.s_btn2 {
+    display: inline-block;
+    width: @rem * 100;
+    height: 46px;
+    line-height: 46px;
+    font-size: @rem * 18;
+    text-align: center;
+    color: #fff;
+    background-color: #ababab;
+    .yuan;
+}
+
+.s_btn3 {
+    display: inline-block;
+    width: @rem * 100;
+    height: 46px;
+    line-height: 46px;
+    font-size: @rem * 18;
+    text-align: center;
+    color: #fff;
+    background-color: #1276c4;
+    .yuan;
+}
+
+.icon_btn {
+    display: inline-block;
+    width: @rem * 115;
+    height: 48px;
+    line-height: 48px;
+    font-size: @rem * 24;
+    padding-left: 55px;
+    position: relative;
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+    .yuan;
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        width: @rem * 30;
+        height: @rem * 30;
+        transform: translateY(-50%);
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

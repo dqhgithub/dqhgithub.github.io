@@ -1,0 +1,98 @@
+html{
+	max-width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    min-height: 1024px;
+    margin:0 auto;
+    background: url("../img/login/loginBg.jpg");
+    background-size: cover;
+    position: absolute;
+}
+.nav{
+    width: 940px;
+    height: 680px;
+    margin: 0 auto;
+    position: relative;
+    top:20%;
+}
+.nav_nec{
+    width: 100%;
+    height: 460px;
+    margin-top: 40px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+}
+.logodl{
+    cursor: pointer;
+}
+.nav_nec .nav_log{
+    margin: 3px 3px;
+}
+.nav_nec_tx{
+    width: 350px;
+    height: 460px;
+    position: absolute;
+    right: 0;
+    top: 0;
+ }
+.nav_lgtle{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.nav_nec_tx input{
+    margin-left: 5px;
+    padding: 10px 40px;
+    width: 210px;
+    border-radius:2px;
+    border-bottom: 1px solid #C5CAD5;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    font-size: 17px;
+}
+#uname{
+    margin-top:60px;
+}
+#upwd{
+    margin-top:40px;
+}
+.userImg{
+    position: absolute;
+    left: 5px;
+    top: 152px;
+}
+.pwdImg{
+    position: absolute;
+    left: 5px;
+    top: 232px;
+}
+.seeImg{
+    position: absolute;
+    right:55px;
+    top: 232px;
+}
+.nav_wjm{
+    width: 88%;
+    height: 58px;
+    line-height: 58px;
+    text-align: right;
+}
+.nav_wjm a{
+    color: #66ADD7;
+}
+.bt_register{
+    margin-left: 5px;
+    width: 290px;
+    height:50px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:white;
+    border-radius:5px;
+    background: #0090E3;
+    font-size: 20px;
+}

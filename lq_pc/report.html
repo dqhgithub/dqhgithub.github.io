@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>报表</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<!--全局样式-->
+		<link rel="stylesheet" type="text/css" href="css/report.css" />
+	</head>
+
+	<body>
+		<div class="container clearfix">
+			<!--网站左边导航-->
+			<div class="main_left">
+				<div class="logo">
+					<a href=""><img src="img/index/logo.png" alt="" /></a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="index.html">
+								<div class="img"><img src="img/index/nav_icon_1.png" alt="" /></div>
+								<div class="txt">首 页</div>
+							</a>
+						</li>
+						<li>
+							<a href="home.html">
+								<div class="img"><img src="img/index/nav_icon_2.png" alt="" /></div>
+								<div class="txt">仓 库</div>
+							</a>
+						</li>
+						<li>
+							<a href="home.html">
+								<div class="img"><img src="img/index/nav_icon_3.png" alt="" /></div>
+								<div class="txt">烘 干</div>
+							</a>
+						</li>
+						<li>
+							<a href="monitor.html">
+								<div class="img"><img src="img/index/nav_icon_4.png" alt="" /></div>
+								<div class="txt">监 控</div>
+							</a>
+						</li>
+						<li class="active">
+							<a href="report.html">
+								<div class="img"><img src="img/index/nav_icon_5.png" alt="" /></div>
+								<div class="txt">报 表</div>
+							</a>
+						</li>
+						<li>
+							<a href="home.html">
+								<div class="img"><img src="img/index/nav_icon_6.png" alt="" /></div>
+								<div class="txt">我 的</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--网站右边内容区-->
+			<div class="main_right">
+				<div class="head">
+					<div class="wrap clearfix">
+						<div class="alert_box">特别警告：A仓库室温超过预警温度，请立即查看并处理。</div>
+						<div class="user">
+							<ul>
+								<li class="user_img">
+									<a href=""><img src="img/index/user_icon.png" /></a>
+								</li>
+								<li class="user_name"><span>你好!</span>
+									<a href="">黄永安</a>
+								</li>
+								<li class="user_btn">
+									<a class="adm" href="">管理员</a>
+									<a href="">退出登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!--内容区最大包-->
+				<div class="main_con">
+					<!--内容区居中包-->
+					<div class="wrap">
+						<!--面包屑导航-->
+						<div class="crumbs_nav">
+							<ul>
+								<li>
+									<a href="">荔泉粮仓管理平台</a>
+								</li>
+								<li>
+									<a href="">仓库</a>
+								</li>
+								<li class="last">
+									<a href="">A仓库</a>
+								</li>
+							</ul>
+						</div>
+						<!--主内容区-->
+						<div class="report clearfix">
+							<div class="report_left">
+								<div class="report_title">
+									<span>品种</span>
+									<div class="variety_tabbtn">
+										<a class="pie_btn active" href="javascript:;"></a>
+										<a class="bar_btn" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="chart_variety">
+									<div id="chart1" style="width: 100%;height:450px;"></div>
+								</div>
+								<div class="variety_table">
+									<div class="variety_title">
+										<span class="orders">序号</span>
+										<span class="names">名称</span>
+										<span class="numbers">数量（吨）</span>
+									</div>
+									<ul class="variety_list">
+										<li>
+											<a href="">
+												<span class="order">1</span>
+												<span class="name">细苗米</span>
+												<span class="number">3000</span>
+												<span class="look">查看></span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<span class="order">2</span>
+												<span class="name">东北大米</span>
+												<span class="number">3000</span>
+												<span class="look">查看></span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<span class="order">3</span>
+												<span class="name">茉莉大米</span>
+												<span class="number">3000</span>
+												<span class="look">查看></span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<span class="order">4</span>
+												<span class="name">东北糙米</span>
+												<span class="number">3000</span>
+												<span class="look">查看></span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<span class="order">5</span>
+												<span class="name">新米</span>
+												<span class="number">3000</span>
+												<span class="look">查看></span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<span class="order">6</span>
+												<span class="name">细苗米</span>
+												<span class="number">3000</span>
+												<span class="look">查看></span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="report_right">
+								<div class="report_rtop">
+									<div class="report_title">
+										<span>仓库</span>
+									</div>
+									<div class="chart_depot">
+										<div id="chart2" style="width: 100%;height:374px;"></div>
+									</div>
+								</div>
+								<div class="report_rbottom">
+									<div class="report_title">
+										<span>供应商</span>
+									</div>
+									<div class="chart_supplier">
+										<div id="chart3" style="width: 100%;height:374px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/report.js"></script>
+		<script src="js/tran-scalc.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

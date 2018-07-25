@@ -1,0 +1,214 @@
+/*复用样式*/
+.margin {
+  margin: 0 auto;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.s_btn1 {
+  display: inline-block;
+  width: 7.5rem;
+  height: 48px;
+  line-height: 48px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #8c8c8c;
+  border-radius: 8px;
+}
+.s_btn1:hover,
+.s_btn1.active {
+  background-color: #22a6e6;
+  color: #fff;
+}
+.s_btn2 {
+  display: inline-block;
+  width: 6.25rem;
+  height: 46px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ababab;
+  border-radius: 8px;
+}
+.s_btn3 {
+  display: inline-block;
+  width: 6.25rem;
+  height: 46px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+  background-color: #1276c4;
+  border-radius: 8px;
+}
+.icon_btn {
+  display: inline-block;
+  width: 7.1875rem;
+  height: 48px;
+  line-height: 48px;
+  font-size: 1.5rem;
+  padding-left: 55px;
+  position: relative;
+  background-color: #666666;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+.icon_btn .icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  width: 1.875rem;
+  height: 1.875rem;
+  transform: translateY(-50%);
+}
+.icon_btn .icon img {
+  display: block;
+  width: 100%;
+}
+/*复用样式*/
+.report_left {
+  float: left;
+  width: calc(100% - 49.71% - 34px);
+  height: 895px;
+  padding: 0 8px 0 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.report_title {
+  padding: 20px 5px 15px;
+  position: relative;
+}
+.report_title span {
+  font-size: 1.5rem;
+  color: #8c8c8c;
+}
+.report_title .pie_btn {
+  position: absolute;
+  top: 17px;
+  right: 65px;
+  width: 43px;
+  height: 36px;
+  background: url(../img/report/pie_1.png) no-repeat;
+}
+.report_title .pie_btn.active {
+  background: url(../img/report/pie_2.png) no-repeat;
+}
+.report_title .bar_btn {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  width: 43px;
+  height: 36px;
+  background: url(../img/report/bar_1.png) no-repeat;
+}
+.report_title .bar_btn.active {
+  background: url(../img/report/bar_2.png) no-repeat;
+}
+.chart_variety {
+  height: 450px;
+}
+.variety_title {
+  height: 55px;
+  line-height: 55px;
+  background-color: #e1f2ff;
+  color: #a1a1a1;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #fefefe;
+}
+.variety_title span {
+  display: inline-block;
+}
+.variety_title .orders {
+  margin-left: 35px;
+  display: inline-block;
+  width: 40px;
+}
+.variety_title .names {
+  width: 270px;
+  padding: 0 10px;
+  text-align: center;
+}
+.variety_list {
+  height: 315px;
+  overflow-y: auto;
+  border-radius: 0 0 8px 8px;
+}
+.variety_list li {
+  position: relative;
+  background-color: #f6f6f6;
+  line-height: 60px;
+  border-bottom: 1px solid #fefefe;
+}
+.variety_list li:nth-child(even) {
+  background-color: #eee;
+}
+.variety_list li span {
+  display: inline-block;
+  font-size: 1.125rem;
+}
+.variety_list li .order {
+  margin-left: 35px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.125rem;
+  background: url(../img/report/yuan_bg.png) no-repeat;
+  margin-right: 8px;
+}
+.variety_list li .name {
+  width: 270px;
+  padding: 0 10px;
+  text-align: center;
+  color: #666;
+}
+.variety_list li .number {
+  color: #006699;
+}
+.variety_list li .look {
+  color: #7a7c7d;
+  position: absolute;
+  right: 4%;
+}
+.report_right {
+  float: right;
+  width: calc(100% - 49.28% - 14px);
+}
+.report_rtop {
+  width: 100%;
+  height: 440px;
+  background-color: #fff;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.report_rbottom {
+  width: 100%;
+  height: 440px;
+  background-color: #fff;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.chart_supplier #chart3 {
+  margin-left: -30px;
+}

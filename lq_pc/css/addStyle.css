@@ -1,0 +1,127 @@
+/*报警设置溢出修改*/
+.depot_settab .tab_con {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 255px;
+}
+/*报警切换按钮修改*/
+.addd_btn {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.addd_btn.active {
+  z-index: 1;
+}
+.saveset_btn.active {
+  z-index: 1;
+}
+/*设备映射修改*/
+.set_ul1 li {
+  position: relative;
+}
+.set_ul1 .setli_id {
+  position: absolute;
+  left: 10px;
+}
+.set_ul1 .setli_name {
+  position: absolute;
+  left: 80px;
+}
+.set_ul1 .setli_attribute {
+  position: absolute;
+  left: 320px;
+}
+.set_ul1 .setli_edit {
+  overflow: hidden;
+  position: absolute;
+  top: 14px;
+  right: 50px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  cursor: pointer;
+  text-indent: -999px;
+  background: url(../img/home/icon_insert.png) no-repeat;
+}
+.set_ul1 .setli_edit:hover {
+  opacity: .8;
+}
+.set_ul1 .setli_delete {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  width: 25px;
+  border: 1px solid #8c8c8c;
+  border-radius: 50%;
+  font-size: 1rem;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  color: #8c8c8c;
+  background-color: transparent;
+}
+.set_ul1 .setli_delete:hover {
+  opacity: .8;
+}
+/*增加粮仓弹窗*/
+.popup_addgranaryselect {
+  position: relative;
+  padding-top: 12px;
+}
+.popup_addgranaryselect li {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  color: #868686;
+  text-align: center;
+}
+.popup_addgranaryselect li select {
+  cursor: pointer;
+  color: #333;
+}
+.popup_addgranaryselect li select select {
+  color: #333;
+  border: 1px solid #333;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: menulist-button;
+  -moz-appearance: menulist-button;
+  -webkit-appearance: menulist-button;
+}
+.popup_addgranarylist {
+  margin-left: 21px;
+  padding-top: 10px;
+}
+.popup_addgranarylist li {
+  float: left;
+  width: calc((100% - 21px - 30px) / 2);
+  margin-right: 15px;
+  border-bottom: 1px solid #b9b9b9;
+  line-height: 60px;
+  font-size: 22px;
+  display: flex;
+}
+.popup_addgranarylist li span {
+  color: #3c3c3c;
+}
+.popup_addgranarylist li input {
+  width: calc(100% - 130px);
+  border: none;
+  background: none;
+  position: relative;
+  background: url(../img/home/icon_insert.png) no-repeat;
+  background-position: right 20px;
+  background-size: 20px 20px;
+}
+.popup_addgranarylist li .title {
+  display: inline-block;
+  width: 110px;
+  color: #0673A9;
+  text-align: center;
+  margin-right: 30px;
+}
+.popup_addgranary .setbbtn {
+  display: block;
+}

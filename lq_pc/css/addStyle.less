@@ -1,0 +1,152 @@
+/*报警设置溢出修改*/
+
+.depot_settab .tab_con {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 255px;
+}
+
+
+/*报警切换按钮修改*/
+
+.addd_btn {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    &.active {
+        z-index: 1;
+    }
+}
+
+.saveset_btn {
+    &.active {
+        z-index: 1;
+    }
+}
+
+
+/*设备映射修改*/
+
+.set_ul1 {
+    li {
+        position: relative;
+    }
+    .setli_id {
+        position: absolute;
+        left: 10px;
+    }
+    .setli_name {
+        position: absolute;
+        left: 80px;
+    }
+    .setli_attribute {
+        position: absolute;
+        left: 320px;
+    }
+    .setli_edit {
+        overflow: hidden;
+        position: absolute;
+        top: 14px;
+        right: 50px;
+        width: 22px;
+        height: 22px;
+        border: 0;
+        cursor: pointer;
+        text-indent: -999px;
+        background: url(../img/home/icon_insert.png) no-repeat;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .setli_delete {
+        position: absolute;
+        right: 0;
+        top: 13px;
+        width: 25px;
+        border: 1px solid #8c8c8c;
+        border-radius: 50%;
+        font-size: 1rem;
+        height: 25px;
+        line-height: 25px;
+        cursor: pointer;
+        color: #8c8c8c;
+        background-color: transparent;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+
+
+/*增加粮仓弹窗*/
+
+.popup_addgranaryselect {
+    position: relative;
+    padding-top: 12px;
+    li {
+        position: relative;
+        @w: 180px;
+        @h: 60px;
+        @c: #868686;
+        @fz: 24px;
+        position: relative;
+        width: @w;
+        height: @h;
+        line-height: @h;
+        font-size: @fz;
+        color: @c;
+        text-align: center;
+        select {
+            cursor: pointer;
+            color: #333;
+            select {
+                color: #333;
+                border: 1px solid #333;
+                /*很关键：将默认的select选择框样式清除*/
+                appearance: menulist-button;
+                -moz-appearance: menulist-button;
+                -webkit-appearance: menulist-button;
+            }
+        }
+    }
+}
+
+.popup_addgranarylist {
+    margin-left: 21px;
+    padding-top: 10px;
+    li {
+        float: left;
+        width: calc((100% - 21px - 30px) / 2);
+        margin-right: 15px;
+        border-bottom: 1px solid #b9b9b9;
+        line-height: 60px;
+        font-size: 22px;
+        display: flex;
+        span {
+            color: #3c3c3c;
+        }
+        input {
+            width: calc(100% - 130px);
+            border: none;
+            background: none;
+            position: relative;
+            background: url(../img/home/icon_insert.png) no-repeat;
+            background-position: right 20px;
+            background-size: 20px 20px;
+        }
+        .title {
+            display: inline-block;
+            width: 110px;
+            color: #0673A9;
+            text-align: center;
+            margin-right: 30px;
+        }
+    }
+}
+
+.popup_addgranary {
+    .setbbtn {
+        display: block;
+    }
+}
