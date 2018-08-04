@@ -21,9 +21,11 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/vue.min.js"></script>
+		<script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.min.js"></script>
 	</head>
 
 	<body>
+		
 		<div id="resume">
 			<div class="my-resume clearfix">
 				<div class="d-l">
@@ -64,43 +66,52 @@
 					<div class="dr-box">
 						<h2 class="wow bounceInDown animated" data-wow-duration="2s">个人优势</h2>
 						<ol class="jishu">
-							<li v-for="(item, key) in ys" key="v" class="wow bounceInUp animated"  data-wow-duration="2s" :data-wow-delay="key * .5 +'s'" v-text="item.value"></li>
+							<li v-for="(item, key) in ys" key="v" class="wow bounceInUp animated" data-wow-duration="2s" :data-wow-delay="key * .5 +'s'" v-text="item.value"></li>
 						</ol>
 					</div>
 					<div class="dr-box">
 						<h2 class="wow bounceInDown animated" data-wow-delay=".5s" data-wow-duration="2s">项目作品</h2>
 						<div class="row">
-							<div class="col-sm-6 col-md-4 zp wow bounceInUp animated" 
-								@mouseover="showtip(v)" @mouseout="hidetip()" v-for="(item,v) in xm" data-wow-duration="1s" :data-wow-delay="v*.2+'s'">
-								<a :href="item.url" class="thumbnail" target="_blank"  >
+							<div class="col-sm-6 col-md-4 zp wow bounceInUp animated" @mouseover="showtip(v)" @mouseout="hidetip()" v-for="(item,v) in xm" data-wow-duration="1s" :data-wow-delay="v*.2+'s'">
+								<a :href="item.url" class="thumbnail" target="_blank">
 									<img class="wow bounceIn animated" :data-wow-delay="(v+1)*.5+'s'" :src="'img/zp/zp'+item.img+'.png'" alt="作品">
 									<div class="zplist" :class="{cur:sh == v}">
 										<h3 v-html="item.name"></h3>
 									</div>
 								</a>
 							</div>
-							
+
 						</div>
 					</div>
 					<div class="dr-box">
 						<h2 class="wow bounceInDown animated" data-wow-delay=".5s" data-wow-duration="2s">设计作品</h2>
 						<div class="row">
-							<div class="col-sm-6 col-md-4 zp wow bounceInUp animated" 
-								@mouseover="showtip(v)" @mouseout="hidetip()" v-for="(item,v) in sj" data-wow-duration="1s" :data-wow-delay="v*.2+'s'">
-								<a :href="item.url" class="thumbnail" target="_blank"  >
+							<div class="col-sm-6 col-md-4 zp wow bounceInUp animated" @mouseover="showtip(v)" @mouseout="hidetip()" v-for="(item,v) in sj" data-wow-duration="1s" :data-wow-delay="v*.2+'s'">
+								<a :href="item.url" class="thumbnail" target="_blank">
 									<img class="wow bounceIn animated" :data-wow-delay="(v+1)*.5+'s'" :src="'img/zp/sj'+item.img+'.png'" alt="作品">
 									<div class="zplist" :class="{cur:sh == v}">
 										<h3 v-html="item.name"></h3>
 									</div>
 								</a>
 							</div>
-							
+
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
+		<p>
+			<!-- 使用 router-link 组件来导航. -->
+			<!-- 通过传入 `to` 属性指定链接. -->
+			<!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+			<router-link to="/foo">Go to Foo</router-link>
+			<router-link to="/bar">Go to Bar</router-link>
+		</p>
+		<!-- 路由出口 -->
+		<!-- 路由匹配到的组件将渲染在这里 -->
+		<router-view></router-view>
 		</div>
+		<h1 class="motto">hope is a goog thing!</h1>
 		<script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>
 		<script>
 			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
@@ -119,68 +130,68 @@
 					email: "718121959@qq.com", //邮箱
 					city: "深圳",
 				},
-				xm:[{
-					name:"然古水果商城</br>pc端",
-					url:"http://www.rglpmall.com/",
-					img:1
-				},{
-					name:"港比利钻石商城</br>移动端",
-					url:"http://www.hkbel.com/wap/",
-					img:2
-				},{
-					name:"中创盈科官网</br>响应式",
-					url:"http://www.sinyink.com",
-					img:3
-				},{
-					name:"执行宝</br>app",
-					url:"http://hcx18.com/notepad/",
-					img:4
-				},{
-					name:"粮仓管理</br>App",
-					url:"https://hcx18.com/lq",
-					img:5
-				},{
-					name:"我的购物车</br>原生js",
-					url:"https://hcx18.com/car",
-					img:6
+				xm: [{
+					name: "然古水果商城</br>pc端",
+					url: "http://www.rglpmall.com/",
+					img: 1
+				}, {
+					name: "港比利钻石商城</br>移动端",
+					url: "http://www.hkbel.com/wap/",
+					img: 2
+				}, {
+					name: "中创盈科官网</br>响应式",
+					url: "http://www.sinyink.com",
+					img: 3
+				}, {
+					name: "执行宝</br>app",
+					url: "http://hcx18.com/notepad/",
+					img: 4
+				}, {
+					name: "粮仓管理</br>App",
+					url: "https://hcx18.com/lq",
+					img: 5
+				}, {
+					name: "我的购物车</br>原生js",
+					url: "https://hcx18.com/car",
+					img: 6
 				}],
-				sj:[{
-					name:"我的简历",
-					url:"http://hcx18.com/dqh/",
-					img:1
-				},{
-					name:"手机商城</br>移动端设计",
-					url:"http://hcx18.com/dqh/shangchengweb.html",
-					img:2
-				},{
-					name:"企业官网</br>移动端设计",
-					url:"http://hcx18.com/dqh/qyweb.html",
-					img:3
+				sj: [{
+					name: "我的简历",
+					url: "http://hcx18.com",
+					img: 1
+				}, {
+					name: "手机商城</br>移动端设计",
+					url: "http://hcx18.com/shangchengweb.html",
+					img: 2
+				}, {
+					name: "企业官网</br>移动端设计",
+					url: "http://hcx18.com/qyweb.html",
+					img: 3
 				}],
-				sh:-1,
+				sh: -1,
 				skill: [{ //技能
 						name: "HTML+CSS",
-						value: 80
+						value: 95
 					},
 					{
 						name: "JavaScript",
-						value: 65
-					},
-					{
-						name: "vue",
-						value: 60
+						value: 75
 					},
 					{
 						name: "jquery",
-						value: 70
+						value: 75
+					},
+					{
+						name: "vue",
+						value: 65
 					},
 					{
 						name: "less",
 						value: 70
-					},{
+					}, {
 						name: "Boostrap",
-						value: 60
-					},{
+						value: 65
+					}, {
 						name: "PhotoShop",
 						value: 55
 					}
@@ -195,23 +206,55 @@
 				max: 100, //技能最高
 				welcome: "你好！欢迎你调试我的代码！" //欢迎语。
 			}
+			// 0. 如果使用模块化机制编程，導入Vue和VueRouter，要调用 Vue.use(VueRouter)
+
+			// 1. 定义（路由）组件。
+			// 可以从其他文件 import 进来
+			const Foo = { template: '<div>foo</div>' }
+			const Bar = { template: '<div>bar</div>' }
+
+			// 2. 定义路由
+			// 每个路由应该映射一个组件。 其中"component" 可以是
+			// 通过 Vue.extend() 创建的组件构造器，
+			// 或者，只是一个组件配置对象。
+			// 我们晚点再讨论嵌套路由。
+			const routes = [
+				{ path: '/foo', component: Foo },
+				{ path: '/bar', component: Bar }
+			]
+
+			// 3. 创建 router 实例，然后传 `routes` 配置
+			// 你还可以传别的配置参数, 不过先这么简单着吧。
+			const router = new VueRouter({
+				routes // （缩写）相当于 routes: routes
+			})
+
+			// 4. 创建和挂载根实例。
+			// 记得要通过 router 配置参数注入路由，
+			// 从而让整个应用都有路由功能
+//			const app = new Vue({
+//				router
+//			}).$mount('#resume')
+
+			// 现在，应用已经启动了！
 			var vm = new Vue({
+				router,
 				el: "#resume",
 				data: obj,
 				created() {
 					console.log(this.welcome)
-					
+
 				},
-				methods:{
-					showtip(i){
-						this.sh = i 
+				methods: {
+					showtip(i) {
+						this.sh = i
 					},
-					hidetip(){
-						this.sh = -1 
+					hidetip() {
+						this.sh = -1
 					}
 				}
 			})
-		</script>
+	</script>
 	</body>
 
 </html>

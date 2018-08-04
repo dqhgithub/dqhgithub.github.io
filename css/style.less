@@ -177,30 +177,11 @@ body {
 }
 
 .jishu {
-//  overflow: hidden;
+    //  overflow: hidden;
     margin-left: 45px;
     li {
         margin-bottom: 10px;
         font-size: 18px;
-    }
-}
-/* 小型设备（平板电脑，768px 起） */
-@media (max-width: 768px ) {
-    .my-resume {
-        margin: 0;
-        border-radius: 0;
-    }
-    .d-l {
-        max-width: 250px;
-        padding-bottom: 50px;
-    }
-    .d-r {
-        max-width: ~'calc(100% - 250px)';
-    }
-    .d-ll {
-        h2 {
-            margin-right: 10px;
-        }
     }
 }
 
@@ -246,7 +227,7 @@ body {
     height: 100%;
     background-color: rgba(255,255,255,.5);
     border: 1px solid rgba(0,0,0,.5);
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     border-radius: 10px;
     text-align: center;
     color: #333;
@@ -260,9 +241,98 @@ body {
     }
     &.cur {
         right: 0;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
     }
 }
+
+.sj-box {
+    position: relative;
+    text-align: center;
+    h2 {
+        line-height: 50px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #00a0e9;
+        color: #fff;
+        opacity: 0.6;
+        span {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+}
+.motto {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/* 小型设备（平板电脑，768px 起） */
+@media (max-width: 768px ) {
+    .my-resume {
+        margin: 0;
+        border-radius: 0;
+    }
+    .d-l {
+        max-width: 250px;
+        padding-bottom: 50px;
+    }
+    .d-r {
+        max-width: ~'calc(100% - 250px)';
+    }
+    .d-ll {
+        h2 {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    }
+    .jishu {
+        li{
+            font-size: 16px;
+        }
+    }
+    .zp {
+        padding-bottom: 62px;
+        .thumbnail {
+            overflow: inherit;
+        }
+    }
+    .dr-box {
+        h2{
+            font-size: 20px;
+            margin: 15px 0;
+        }
+    }
+    .zplist {
+        position: absolute;
+        right: 0;
+        top: auto;
+        bottom: -62px;
+        height: auto;
+        border: 0;
+        h3 {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+            font-size: 18px;    
+        }
+    }
+    .motto {
+    font-size: 20px;
+}
+}
+
 /* 小型设备（平板电脑，768px 起） */
 @media (max-width: 640px ) {
     .d-l {
@@ -274,43 +344,13 @@ body {
     .dr-box {
         font-size: 26px;
     }
-}
-
-.sj-box{
-    position: relative;
-    text-align: center;
-    h2{
-        line-height: 50px;
-    }
-    img{
-        max-width: 100%;
-    }
-    .btn{
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #00a0e9;
-        color: #fff;
-        opacity: .6;
-        span{
-            display: inline-block;
-            margin-left: 10px;
-        }
-    }
-}
-/* 小型设备（平板电脑，768px 起） */
-@media (max-width: 640px ) {
-    .sj-box{
-        .btn{
+    .sj-box {
+        .btn {
             top: 0;
             left: 0;
             font-size: 22px;
             border-radius: 0;
-            span{
+            span {
                 display: none;
             }
         }
