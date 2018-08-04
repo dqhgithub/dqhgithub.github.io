@@ -123,7 +123,7 @@ body {
 }
 .d-l1 dl dd em,
 .d-l2 dl dd em {
-  width: 80px;
+  width: 90px;
   display: inline-block;
 }
 .d-l3 dl dd em {
@@ -215,6 +215,7 @@ body {
 .zp .thumbnail img {
   position: relative;
   padding-top: 5px;
+  padding-bottom: 5px;
   z-index: 1;
   margin-bottom: 80px;
 }
@@ -254,5 +255,43 @@ body {
   }
   .dr-box {
     font-size: 26px;
+  }
+}
+.sj-box {
+  position: relative;
+  text-align: center;
+}
+.sj-box h2 {
+  line-height: 50px;
+}
+.sj-box img {
+  max-width: 100%;
+}
+.sj-box .btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00a0e9;
+  color: #fff;
+  opacity: .6;
+}
+.sj-box .btn span {
+  display: inline-block;
+  margin-left: 10px;
+}
+/* 小型设备（平板电脑，768px 起） */
+@media (max-width: 640px) {
+  .sj-box .btn {
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    border-radius: 0;
+  }
+  .sj-box .btn span {
+    display: none;
   }
 }

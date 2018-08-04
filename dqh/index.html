@@ -86,11 +86,11 @@
 						<h2 class="wow bounceInDown animated" data-wow-delay=".5s" data-wow-duration="2s">设计作品</h2>
 						<div class="row">
 							<div class="col-sm-6 col-md-4 zp wow bounceInUp animated" 
-								@mouseover="showtip(v)" @mouseout="hidetip()"  v-for="(item,v) in 3" data-wow-duration="1s" :data-wow-delay="v*.2+'s'">
-								<a href="#" class="thumbnail"  >
-									<img class="wow bounceIn animated" :data-wow-delay="(v+1)*.5+'s'" src="img/zp/zp1.png" alt="作品">
-									<div class="zplist" v-show="sh == v">
-										<h3>然古</h3>
+								@mouseover="showtip(v)" @mouseout="hidetip()" v-for="(item,v) in sj" data-wow-duration="1s" :data-wow-delay="v*.2+'s'">
+								<a :href="item.url" class="thumbnail" target="_blank"  >
+									<img class="wow bounceIn animated" :data-wow-delay="(v+1)*.5+'s'" :src="'img/zp/sj'+item.img+'.png'" alt="作品">
+									<div class="zplist" :class="{cur:sh == v}">
+										<h3 v-html="item.name"></h3>
 									</div>
 								</a>
 							</div>
@@ -143,6 +143,19 @@
 					name:"我的购物车</br>原生js",
 					url:"https://hcx18.com/car",
 					img:6
+				}],
+				sj:[{
+					name:"我的简历",
+					url:"http://hcx18.com/dqh/",
+					img:1
+				},{
+					name:"手机商城</br>移动端设计",
+					url:"http://www.hkbel.com/wap/",
+					img:2
+				},{
+					name:"中创盈科官网</br>响应式",
+					url:"http://www.sinyink.com",
+					img:3
 				}],
 				sh:-1,
 				skill: [{ //技能
