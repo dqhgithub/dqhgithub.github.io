@@ -58,7 +58,8 @@
 				animation: play 10s linear infinite;
 				/*动画名称 执行时间 匀速 无限执行*/
 			}
-			.box .pic img{
+			
+			.box .pic img {
 				transform: scale(.8);
 			}
 			
@@ -92,18 +93,18 @@
 			/*end text*/
 			
 			@media (max-width: 768px) {
-				.top{
+				.top {
 					height: 100px;
 					line-height: 100px;
 					font-size: 25px;
 					margin: 20px auto;
 				}
-				.box{
+				.box {
 					height: 230px;
 				}
 				#text {
 					width: 90%;
-					margin:  0 auto;
+					margin: 0 auto;
 					font-size: 20px;
 				}
 			}
@@ -133,10 +134,13 @@
 		<!--start text-->
 		<div id="text"></div>
 		<!--end text-->
-		<embed src="music.mp3" hidden="true" />
-		<audio src="music.mp3" hidden="true" loop="true" autoplay></audio>
+		<embed src="http://hcx18.com/cx/music.mp3" hidden="true" />
+		<audio src="http://hcx18.com/cx/music.mp3" hidden="true" loop="true" autoplay></audio>
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script>
+			$('html').one('touchstart', function() {
+				audio.play();
+			});
 			$(".pic ul li").each(function(i) { //遍历
 				var deg = 360 / $(".pic ul li").size(); //size个数
 				//当前的li对象 添加css样式
